@@ -1,0 +1,46 @@
+// Author: Conner Worrell
+
+// Class representing an electronic device
+public class ElectronicDevice {
+    // Private fields
+    private String brand; // Brand of the electronic device
+    private double price; // Price of the electronic device
+    private ElectronicDeviceType type; // Type of the electronic device
+
+    // Constructor
+    public ElectronicDevice(String brand, double price, ElectronicDeviceType type) {
+        this.brand = brand;
+        this.price = price;
+        this.type = type;
+    }
+
+    // Getter for brand
+    public String getBrand() {
+        return brand;
+    }
+
+    // Getter for price
+    public double getPrice() {
+        return price;
+    }
+
+    // Getter for type
+    public ElectronicDeviceType getType() {
+        return type;
+    }
+
+    // Setter for brand
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    // Setter for price
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    // Setter for type
+    public void setType(ElectronicDeviceType type) {
+        this.type = type;
+    }
+}
