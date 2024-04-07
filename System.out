@@ -1,0 +1,36 @@
+// Author: Worrell, Conner
+
+// Main class containing the main method
+public class Main {
+    public static void main(String[] args) {
+        // Create variables of the enumerated type and display them
+        ElectronicDeviceType device1 = ElectronicDeviceType.LAPTOP;
+        ElectronicDeviceType device2 = ElectronicDeviceType.SMARTPHONE;
+        System.out.println("Device 1: " + device1);
+        System.out.println("Device 2: " + device2);
+
+        // Create instances of the ElectronicDevice class
+        ElectronicDevice electronicDevice1 = new ElectronicDevice("Dell", 999.99, ElectronicDeviceType.LAPTOP);
+        ElectronicDevice electronicDevice2 = new ElectronicDevice("Apple", 799.99, ElectronicDeviceType.SMARTPHONE);
+
+        // Set all instance variables for the two instances using mutators
+        electronicDevice1.setBrand("Lenovo");
+        electronicDevice1.setPrice(899.99);
+        electronicDevice1.setType(ElectronicDeviceType.TABLET);
+
+        electronicDevice2.setBrand("Samsung");
+        electronicDevice2.setPrice(699.99);
+        electronicDevice2.setType(ElectronicDeviceType.SMARTWATCH);
+
+        // Display the values of all fields for the two instances using accessors
+        System.out.println("Device 1 Details:");
+        System.out.println("Brand: " + electronicDevice1.getBrand());
+        System.out.println("Price: $" + electronicDevice1.getPrice());
+        System.out.println("Type: " + electronicDevice1.getType());
+
+        System.out.println("Device 2 Details:");
+        System.out.println("Brand: " + electronicDevice2.getBrand());
+        System.out.println("Price: $" + electronicDevice2.getPrice());
+        System.out.println("Type: " + electronicDevice2.getType());
+    }
+}
